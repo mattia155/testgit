@@ -100,11 +100,12 @@ pandas_df_data = fastexport_data('V3_DATALAB_DM', "TEST_TRAGHETTO_TERADATA_INPUT
 print("Fastexport done.")
 
 ## Delete all records and then FastLoad
-#print("Testing delete + fastload...")
-#delete_and_insert_df(pandas_df_data, "V3_DATALAB_DM", "TEST_TRAGHETTO_TERADATA_INPUT")
-#print("Fastload done.")
+print("Testing delete + fastload...")
+delete_and_insert_df(pandas_df_data, "V3_DATALAB_DM", "TEST_TRAGHETTO_TERADATA_INPUT")
+print("Fastload done.")
 
 ## Only FastLoad
 #fastload_df(pandas_df_data, "V3_DATALAB_DM", "TEST_TRAGHETTO_TERADATA_INPUT")
 
 ################################################################################
+export teradata_pwd=Cadence_354897 teradata_host=teraprod teradata_user=V3ETLUSR teradata_port=1025 teradata_error_db=V3_DATALAB_WRK
